@@ -3,16 +3,16 @@ var db = {
 		"question": ["Will people with fee waiver on their accounts continue to receive a fee waiver once converted to Optum Bank?"],
 		"response_name": "faqOBankFeeFeeWavier",
 		"slot_vals": null,
-		"long_responses": ["Yes, there will be no change to fee waviers with the migration."],
-		"short_responses": ["Yes, there will be no change to fee waviers."],
+		"long_responses": ["Yes, fee waivers will remain unchanged with the migration."],
+		"short_responses": ["Yes, fee waivers will be unchanged."],
 		"reprompts": ["What else would you like to know about?"]
 	},
 	faqOBankFeeLiquidationHSA: {
 		"question": ["Will there be liquidation fees associated with the migration?"],
 		"response_name": "faqOBankFeeLiquidationHSA",
 		"slot_vals": null,
-		"long_responses": ["Investments will be transferred in-kind, meaning there will be no need for account holders to liquidate their investment accounts. While there will be no fee for the migration to Optum Bank, current fees will apply if an account holder chooses to liquidate their investment account. Following migration, Optum Bank will provide additional fee schedule information to account holders."],
-		"short_responses": ["There is no need for account holders to liquidate, but if you choose to do so liquidate, current fees will apply."],
+		"long_responses": ["Investments will be transferred in-kind, meaning account holders will not need to liquidate their investment accounts. While there will be no fee for the migration to Optum Bank, current fees will apply if an account holder chooses to liquidate their investment account. Following migration, Optum Bank will provide additional fee schedule information to account holders."],
+		"short_responses": ["There is no need for account holders to liquidate, but if you choose to do so, current fees will apply."],
 		"reprompts": ["What else would you like to know about?"]
 	},
 	faqOBankFeeMigrationFeeChange: {
@@ -59,8 +59,8 @@ var db = {
 		"question": ["How do I contribute more to my HSA?"],
 		"response_name": "faqOBankGenContributeHSA",
 		"slot_vals": null,
-		"long_responses": ["There are many ways to contribute to your HSA. The commonly used methods are contributions made via payroll deductions by your employer, or logging on to Optumbank.com and making a contribution from your personal checking/savings accounts."],
-		"short_responses": ["There are many ways to contribute to your HSA. The commonly used methods are contributions made via payroll deductions by your employer, or logging on to Optumbank.com and making a contribution from your personal checking/savings accounts."],
+		"long_responses": ["There are many ways to contribute to your HSA. The commonly used methods are contributions made via payroll deductions by your employer, or by logging on to Optumbank.com and making a contribution from your personal checking/savings accounts."],
+		"short_responses": ["You can contribute to your HSA either through contributions made via payroll deductions by your employer, or by logging on to Optumbank.com and making a contribution from your personal checking/savings accounts."],
 		"reprompts": ["What else would you like to know about?"]
 	},
 	faqOBankGenCustomerServiceHours: {
@@ -75,16 +75,16 @@ var db = {
 		"question": ["Can I use my debit card at the ATM?", "Will there be debit ATM fees?"],
 		"response_name": "faqOBankGenDebit",
 		"slot_vals": null,
-		"long_responses": ["The Optum Bank debit card can be used at ATMs and applicable fees apply. Please note, account holders can transfer funds from their Optum Bank HSA to a personal bank account via direct deposit at no charge."],
-		"short_responses": ["Applicable fees apply."],
+		"long_responses": ["The Optum Bank debit card can be used at ATMs. Applicable fees apply. Please note, account holders can transfer funds from their Optum Bank HSA to a personal bank account via direct deposit at no charge."],
+		"short_responses": ["The Optum Bank debit card can be used at ATMs. Applicable fees apply."],
 		"reprompts": ["What else would you like to know about?"]
 	},
 	faqOBankGenDependentCard: {
 		"question": ["Can my dependents get cards?"],
 		"response_name": "faqOBankGenDependentCard",
 		"slot_vals": null,
-		"long_responses": ["Yes, Optum Bank will provide account holders the same number of debit cards that Wells Fargo provided, including dependent cards. Additional debit cards can be ordered from Optum Bank online."],
-		"short_responses": ["Additional debit cards, including cards for dependents can by ordered from Optum Bank Online."],
+		"long_responses": ["Yes, Optum Bank provides account holders the same number of debit cards that Wells Fargo provided, including dependent cards. Additional debit cards can be ordered from Optumbank.com."],
+		"short_responses": ["Yes, additional debit cards, including cards for dependents, can by ordered from Optum Bank Online."],
 		"reprompts": ["What else would you like to know about?"]
 	},
 	faqOBankGenHSAFeatures: {
@@ -92,7 +92,7 @@ var db = {
 		"response_name": "faqOBankGenHSAFeatures",
 		"slot_vals": null,
 		"long_responses": ["A few of the enhancements account holders will have include: • Receipt image upload and expense tracker • Quicken® export functionality • The ability to transfer funds from your HSA to an account at any bank • An option to email customer service, in addition to 24/7 online and telephone access • An interactive Health Savings Checkup calculator to help account holders determine if they’re saving enough for health care in retirement."],
-		"short_responses": ["New enhancements, including receipt image upload and expense tracker, Quicken support, and other features come with your Optum Bank HSA."],
+		"short_responses": ["Optum Bank HSA includes new enhancements, including receipt image upload and expense tracker, Quicken support."],
 		"reprompts": ["What else would you like to know about?"]
 	},
 	faqOBankGenHSATransfer: {
@@ -108,22 +108,22 @@ var db = {
 		"response_name": "faqOBankGenMigrationBeneficiary",
 		"slot_vals": null,
 		"long_responses": ["No, beneficiary elections will not be migrated to Optum Bank. New beneficiary elections will need to be made after HSA migration."],
-		"short_responses": ["No."],
+		"short_responses": ["No, beneficiary elections will not be migrated."],
 		"reprompts": ["What else would you like to know about?"]
 	},
-/* 	faqOBankGenMigrationHistory: {
+ 	faqOBankGenMigrationHistory: {
 		"question": ["Will account history be migrated?"],
 		"response_name": "faqOBankGenMigrationHistory",
 		"slot_vals": null,
-		"long_responses": ["This data will not be included in the migration to Optum Bank. Historical transaction reporting, access to statements and tax documentation on Wells Fargo Online® will be available for 240 days after the migration."],
+		"long_responses": ["Account history will not be included in the migration to Optum Bank. Historical transaction reporting, access to statements and tax documentation on Wells Fargo Online® will be available for 240 days after the migration."],
 		"short_responses": ["Account history will not be migrated, and will be avaiable for download on Wells Fargo Online for 240 days after the migration."],
 		"reprompts": ["What else would you like to know about?"]
-	}, */
+	}, 
 	faqOBankGenNotifyProvider: {
 		"question": ["Will you inform my medical providers?"],
 		"response_name": "faqOBankGenNotifyProvider",
 		"slot_vals": null,
-		"long_responses": ["To continue having qualified medical expenses automatically pulled from the account, account holders will need to contact their providers/vendors and provide their new account number and transit number. If a current debit card is on file with providers/vendors, account holders will need to provide their new Optum Bank card number."],
+		"long_responses": ["Account holders will need to contact their providers/vendors and provide their new account number and transit number to continue having qualified medical expenses automatically pulled from the account. If a current debit card is on file with providers/vendors, account holders will need to provide their new Optum Bank card number."],
 		"short_responses": ["No. You should update your debit card information used by any medical provider/vendor with your Optum Bank card number."],
 		"reprompts": ["What else would you like to know about?"]
 	},
@@ -140,7 +140,7 @@ var db = {
 		"response_name": "faqOBankGenReachMaximum",
 		"slot_vals": null,
 		"long_responses": ["Optum Bank monitors accounts at various levels including individual, individual plus catchup, family, and family plus catchup based on coverage type and age. Communication is sent to account holders when accounts are close to reaching the annual maximum."],
-		"short_responses": ["Communications will be sent to account holders when accoutns are close to the maximum."],
+		"short_responses": ["Communications will be sent to account holders when accounts are close to the maximum."],
 		"reprompts": ["What else would you like to know about?"]
 	},
 	faqOBankGenWhoOptum: {
