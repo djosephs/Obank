@@ -44,7 +44,7 @@ var db = {
 		"response_name": "faqOBankGenCheckbook",
 		"slot_vals": null,
 		"long_responses": ["Yes, Optum Bank offers checks and there is no fee for ordering and using checks for HSA distribution. However, Optum Bank will not auto-issue replacement checks for migrated accounts. After the migration, account holders will need to order checks online, if desired."],
-		"short_responses": ["Yes, checks are offered, and there is no fee for ordering and using checks for HSA distribution. Migrated accounts will need to order new checks online."],
+		"short_responses": ["Yes, checks are offered, and there is no fee for ordering and using checks for HSA distribution."],
 		"reprompts": ["What else would you like to know about?"]
 	},
 	// faqOBankGenCombineWellsOptum: {
