@@ -35,20 +35,24 @@ def parse_intent_names():
 def parse_samples():
 	lines = gather_alexa_json(alexa_file)
 	intent_dict = parse_intent_names()
+	sample_list = []
 	sample_dict = {}
 	counter = 0 
 	for i in range(0, len(lines)):
 		line = lines[i]
-		if 'samples' in line:
-			for t in range(i, len(lines)):
+		if "samples" in line and "name" in lines[i-1]:
+			for t in range(i+1, len(lines)):
 				if "}," in lines[t] or "]," in lines[t]:
 					break
-				elif 'samples' in lines[t]:
-					continue	
 				else:
-					sample_dict.update({counter:line})
+					valid_line = lines[t] 
+					if valid_line[-1:]==",":
+						valid_line = valid_line[:-1]
+					sample_list.append(valid_line.strip())
+				sample_dict.update({counter:sample_list})
+			sample_list = []
 			counter += 1
-	print sample_dict 				
+	print sample_dict[0] 				
 		
 
 
