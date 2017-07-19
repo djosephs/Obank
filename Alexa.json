@@ -1,0 +1,119 @@
+{
+  "intents": [
+        {
+      "name": "medicalExpensesExp",
+      "samples": [
+        "Are {situation} covered",
+        "What about {situation} ",
+        "Can I use my HSA to pay for {situation} ",
+        "is {situation}  covered ",
+        "is {situation} included as a medical expense"
+      ],
+      "slots": [
+        {
+          "name": "situation",
+          "type": "situation",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "goodBye",
+      "samples": [
+        "goodbye"
+      ],
+      "slots": []
+    },
+    {
+      "name": "medicalExpensesQuest",
+      "samples": [
+        "Tell me about {expensetype} ",
+        "What are {expensetype} ",
+        "I want to know about {expensetype} "
+      ],
+      "slots": [
+        {
+          "name": "expensetype",
+          "type": "expenses",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "tellMeMore",
+      "samples": [
+        "Tell me more",
+        "I want to know more",
+        "yes",
+        "yea"
+      ],
+      "slots": []
+    }
+  ],
+  "types": [
+    {
+      "name": "expenses",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "medical expenses",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "vision expenses",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "dental expenses",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "drug expenses",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "situation",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "Teeth Whitening",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Alcoholism",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ]
+}
