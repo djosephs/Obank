@@ -52,11 +52,14 @@ def parse_samples():
 				sample_dict.update({counter:sample_list})
 			sample_list = []
 			counter += 1
-	print sample_dict[0] 				
+	return sample_dict
 		
 
 
-def build_intent_files(intent_names, sample_text):
+def build_intent_files():
+	intent_dict = parse_intent_names()
+	sample_dict = parse_samples()
+
 	g_intent_start = """
 		{
   		  "userSays": [
@@ -65,8 +68,8 @@ def build_intent_files(intent_names, sample_text):
       			"data": [
         		  {
           			"text":"""
-
-   	# print (g_intent_start)      
+	print g_intent_start
+    
 
 # def build_entity_files(entity_names, entries, synonyms):
 
@@ -74,6 +77,6 @@ def build_intent_files(intent_names, sample_text):
 
 
 # gather_alexa_json(alexa_file)
-# build_intent_files("hello","hello")
+build_intent_files()
 # parse_intent_names()
-parse_samples()
+# parse_samples()
